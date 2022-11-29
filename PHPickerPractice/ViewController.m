@@ -27,7 +27,7 @@
                 [itemProvider loadObjectOfClass:[UIImage class] completionHandler:^(id <NSItemProviderReading> image, NSError *error) {
                     if ([image isKindOfClass:[UIImage class]] ) {
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            [_imageView setImage:image];
+                            [self->_imageView setImage: image];
                         });
                     }
                 }];
