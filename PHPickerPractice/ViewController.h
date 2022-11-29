@@ -1,14 +1,12 @@
-//
-//  ViewController.h
-//  PHPickerPractice
-//
-//  Created by Takaaki Atsumi on 2022/11/29.
-//
-
 #import <UIKit/UIKit.h>
+#import <PhotosUI/PHPicker.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PHPickerViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *loadButton;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *imageInfoLabel;
 
 @end
-
